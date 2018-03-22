@@ -1,4 +1,4 @@
-FROM docker.io/wslee/wslee-tomcat8-s2i
+FROM docker.io/wslee/wslee-tomcat8-s2i:latest
 
 LABEL io.k8s.description="Tomcat8 S2I" \
       io.k8s.display-name="Tomcat8 S2I" \
