@@ -125,7 +125,7 @@
     <!-- You should set jvmRoute to support load-balancing via AJP ie :
     <Engine name="Catalina" defaultHost="localhost" jvmRoute="jvm1">
     -->
-    <Engine name="Catalina" defaultHost="localhost" jvmRoute="${env.HOSTNAME}">
+    <Engine name="Catalina" defaultHost="localhost" jvmRoute="${java.jvmRoute}">
 	<Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"
                  channelSendOptions="8">
 
